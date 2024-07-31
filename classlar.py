@@ -13,6 +13,17 @@ class SuperHero():
     def ornekmethod(self):
         print(f"I am superhero and my Job is :{self.meslek}")
 
-superman = SuperHero("Batman",39,"Gazeteci","Zengin")
 
-print(superman.ornekmethod())
+## Default Degerler ##
+#Kopek 1 yas --> insan 7 yas
+class Kopek():
+    yilCarpani = 7
+
+    def __init__(self,yas=0): #--> Bos deger verildiginde hata vermesini istemiyorsan default deger ver.
+        self.yas = yas
+    def insanYasi(self):
+        return self.yas * Kopek.yilCarpani
+
+myDog = Kopek(3)
+print(myDog.yas)
+print(f"Insan yasi = {myDog.insanYasi()}")
