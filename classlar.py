@@ -21,8 +21,9 @@ class Kopek():
 
     def __init__(self,yas=0): #--> Bos deger verildiginde hata vermesini istemiyorsan default deger ver.
         self.yas = yas
+
     def insanYasi(self):
-        return self.yas * Kopek.yilCarpani
+        return self.yas * self.yilCarpani
 
 myDog = Kopek(3)
 print(myDog.yas)
